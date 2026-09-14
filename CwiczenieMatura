@@ -1,0 +1,20 @@
+#   Zadanie 3, Matura 2024:
+# ZADANIE MATURALNE 3.1 (0-3 pkt)
+#
+# Nieparzystym skrótem dodatniej liczby całkowitej n nazywamy dodatnią
+# liczbę całkowitą m, która powstaje przez usunięcie cyfr parzystych
+# z zapisu dziesiętnego liczby n.
+# Nieparzysty skrót nie istnieje, gdy n składa się z samych cyfr parzystych.
+#
+# Przykłady:
+#   294762 -> 97
+#   39101  -> 3911
+#   224    -> nie istnieje
+#
+# Napisz funkcję, która dla liczby n (zakładamy, że skrót istnieje)
+# wyznaczy liczbę m — nieparzysty skrót liczby n.
+#
+# OGRANICZENIA: tylko liczby całkowite i operacje: + - * / // %,
+# porównania, instrukcje sterujące (if, pętle), przypisania, własne funkcje.
+# ZAKAZ: funkcje wbudowane (np. str(), len()), stringi.
+
