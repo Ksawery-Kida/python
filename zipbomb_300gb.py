@@ -1,26 +1,11 @@
-#!/usr/bin/env python3
-"""
-Plaska (jednowarstwowa) zip bomba ~300 GB - generator do celow EDUKACYJNYCH.
+#   flat zipbomb 300gb
 
-UWAGA: uruchamiaj i rozpakowuj TYLKO w izolowanej maszynie wirtualnej.
-Jedno rozpakowanie -> cala zawartosc (~300 GB) rozwija sie OD RAZU.
-To zapelni dysk i moze zablokowac system, ktory to rozpakuje -
-zrob snapshot VM przed testem.
+#  UWAGA: nie uruchamiaj tego i rozpakowuj tylko w virtual machines etc!!!!!
+#  jedno rozpkowanie to cala zawartosc 
 
-Mechanizm:
-  - jeden duzy plik samych zer (kompresuje sie ~1000:1),
-  - N kopii w jednym archiwum -> po rozpakowaniu N * rozmiar.
-
-Domyslnie: 300 kopii po 1024 MB = ~300 GB po rozpakowaniu.
-Sam plik .zip wyjdzie ~300 MB (limit kompresji DEFLATE ~1032:1).
-
-Uzycie:
-  python3 zipbomb_300gb.py [liczba_kopii] [rozmiar_kopii_MB] [plik_wyjsciowy]
-"""
 import os
 import sys
 import zipfile
-
 
 def human(n):
     n = float(n)
