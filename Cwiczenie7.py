@@ -2,11 +2,11 @@
 print(" Witaj w moim programie który parsuje numery lotów lotniczych tak, aby były czytelne! ")
 
 #   Variables / shortcuts
-WAW = "Warszawa".upper
-KRK = "Kraków".upper
-MNC = "Monachium".upper
-FRA = "Frankfurt".upper
-DUB = "Dublin".upper
+WAW = "Warszawa".upper()
+KRK = "Kraków".upper()
+MNC = "Monachium".upper()
+FRA = "Frankfurt".upper()
+DUB = "Dublin".upper()
 
 #   Parser
 
@@ -44,7 +44,7 @@ def reader_boarding_pass(dane: dict) -> None:
 def main():
     tickets = [
         f"LO123;{WAW};JFK;14:35;22A",
-        "LH456;FRA;{WAW};09:10;7C",
+        f"LH456;{FRA};{WAW};09:10;7C",
         "TO ZLY FORMAT",
     ]
     for raw in tickets:
