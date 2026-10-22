@@ -2,6 +2,7 @@
 
 #  UWAGA: nie uruchamiaj tego i rozpakowuj tylko w virtual machines etc!!!!!
 #  jedno rozpkowanie to cala zawartosc 
+# KOD NAPISANY DLA ESKPERYMENTU I CWICZENIA,NIE DLA USZKODZENIA CZYJEGOS URZADZENIA!!!!!
 
 import os
 import sys
